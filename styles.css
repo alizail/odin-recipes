@@ -13,12 +13,18 @@ h3 {
     color: rgb(117, 46, 46);
 }
 
+h4 {
+    font-family: Geneva;
+    text-align: center;
+}
+
 h3:first-of-type {
     margin-top: 0;
 }
 
 body {
     font-family: Arial;
+    background-color: antiquewhite;
 }
 
 footer {
@@ -31,6 +37,15 @@ div[class='recipe'] {
     background-color: pink;
     padding: 20px;
     width: 50vw;
+    border-radius: 9px;
+}
+
+div[class='recipe-list-index'] {
+    display: block;
+    margin: auto;
+    background-color: pink;
+    padding: 20px;
+    width: 15vw;
     border-radius: 9px;
 }
 
@@ -137,5 +152,17 @@ a:active {
 a[class='header'] {
     color:black;
     text-decoration-line: none;
+}
+
+a[class='featured']:visited {
+    color:rgb(71, 0, 59);
+}
+
+a[class='featured']:hover {
+    color:rgb(255, 214, 214);
+}
+
+a[class='featured']:active {
+    color:rgb(48, 17, 17);
 }
 
