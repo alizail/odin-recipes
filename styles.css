@@ -3,10 +3,101 @@ h1 {
     text-align: center;
 }
 
-body {
+h3 {
     font-family: Geneva;
+    color: rgb(117, 46, 46);
+}
+
+body {
+    font-family: Arial;
 }
 
 footer {
     text-align: center;
 }
+
+div[class='recipe'] {
+    display: block;
+    margin: auto;
+    background-color: pink;
+    padding: 20px;
+    width: 50vw;
+}
+
+div[class='header'] {
+    display: block;
+    margin: auto;
+    background-color: pink;
+    padding: 20px;
+}
+
+.checking {
+    position: relative;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    visibility: hidden;
+}
+
+.new-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    height: 14px;
+    width: 14px;
+    background-color: white;
+}
+
+.checking:hover input ~ .new-checkbox {
+    background-color: rgb(255, 214, 214);
+}
+
+.checking input:active ~ .new-checkbox {
+    background-color: rgb(117, 46, 46);
+}
+
+.checking input:checked ~ .new-checkbox {
+    background-color: rgb(157, 60, 92);
+}
+
+.new-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+.checking input:checked ~ .new-checkbox:after {
+    display: block;
+}
+  
+.checking .new-checkbox:after {
+    left: 2px;
+    bottom: 3px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+a {
+    color: rgb(237, 143, 159);
+}
+
+a:visited {
+    color: rgb(157, 60, 92);
+}
+a:hover {
+    color: rgb(255, 214, 214);
+}
+
+a:active {
+    color: rgb(117, 46, 46);
+}
+
