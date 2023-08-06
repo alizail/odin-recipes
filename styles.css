@@ -3,9 +3,18 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-family: Geneva;
+    text-align: center;
+}
+
 h3 {
     font-family: Geneva;
     color: rgb(117, 46, 46);
+}
+
+h3:first-of-type {
+    margin-top: 0;
 }
 
 body {
@@ -22,6 +31,30 @@ div[class='recipe'] {
     background-color: pink;
     padding: 20px;
     width: 50vw;
+    border-radius: 9px;
+}
+
+div[class='image-intro'] {
+    text-align: center;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    background-color: rgb(157, 60, 92);
+    width: 1070px;
+    border-radius: 10px;
+}
+
+div[class='image-intro'] > img {
+    border-radius: 10px;
+}
+
+div[class='image-intro'] > p {
+    width: 80%;
+    margin: 10px auto;
 }
 
 div[class='header'] {
@@ -99,5 +132,10 @@ a:hover {
 
 a:active {
     color: rgb(117, 46, 46);
+}
+
+a[class='header'] {
+    color:black;
+    text-decoration-line: none;
 }
 
