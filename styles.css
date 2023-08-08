@@ -1,20 +1,20 @@
 h1 {
-    font-family: Geneva;
+    font-family: Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 
 h2 {
-    font-family: Geneva;
+    font-family: Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 
 h3 {
-    font-family: Geneva;
+    font-family: Geneva, Tahoma, sans-serif;
     color: rgb(117, 46, 46);
 }
 
 h4 {
-    font-family: Geneva;
+    font-family: Geneva, Tahoma, sans-serif;
     text-align: center;
 }
 
@@ -23,7 +23,7 @@ h3:first-of-type {
 }
 
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background-color: antiquewhite;
     margin: 0;
 }
